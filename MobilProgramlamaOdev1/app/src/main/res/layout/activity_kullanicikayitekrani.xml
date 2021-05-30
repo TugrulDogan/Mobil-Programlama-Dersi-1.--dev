@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_weight="3">
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameSurname"
+            android:layout_width="337dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:background="#4ecef"
+            android:ems="10"
+            android:hint="Adınız Soyadınız"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            app:layout_constrainStart_toStartOf="parent"
+            app:layout_constrainTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/telefon"
+            android:layout_width="337dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:background="#4ecef"
+            android:ems="10"
+            android:hint="Telefon Numarası"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            app:layout_constrainStart_toStartOf="parent"
+            app:layout_constrainTop_toTopOf="@+id/nameSurname"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="337dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:background="#4ecef"
+            android:ems="10"
+            android:hint="Email Adresi"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            app:layout_constrainStart_toStartOf="parent"
+            app:layout_constrainTop_toTopOf="@+id/telefon"
+            />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="337dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:background="#4ecef"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            app:layout_constrainStart_toStartOf="parent"
+            app:layout_constrainTop_toTopOf="@+id/email"
+            />
+
+        <Button
+            android:id="@+id/button_sign"
+            android:layout_width="326dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:background="#5dbcd2"
+            android:text="Giriş Yap"
+            app:layout_constrainStart_toStartOf="parent"
+            app:layout_constrainTop_toTopOf="@+id/pass" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
